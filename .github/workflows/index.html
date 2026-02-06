@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | M. Akhdan Erlangga</title>
+    <style>
+        :root {
+            --primary-green: #2d6a4f;
+            --light-green: #d8f3dc;
+            --accent-green: #74c69d;
+            --dark-text: #1b4332;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-green);
+            color: var(--dark-text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Header Section */
+        header {
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 40px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--accent-green);
+            margin-bottom: 15px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* Content Sections */
+        .main-content {
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary-green);
+            border-bottom: 2px solid var(--accent-green);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-item b {
+            display: block;
+            color: var(--primary-green);
+        }
+
+        /* List Styling */
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .year {
+            font-weight: bold;
+            color: var(--primary-green);
+            margin-right: 10px;
+        }
+
+        .badge {
+            background: var(--accent-green);
+            color: var(--white);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin: 5px 2px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #666;
+            background: #f9f9f9;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .grid-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="https://via.placeholder.com/150" alt="Foto M. Akhdan Erlangga" class="profile-img">
+        <h1>M. AKHDAN ERLANGGA</h1>
+        <p>Pelajar & Pegiat Olahraga</p>
+    </header>
+
+    <div class="main-content">
+        <section>
+            <h2>Tentang Diri</h2>
+            <p>Saya adalah pribadi yang <b>percaya diri</b>, disiplin, dan memiliki semangat tinggi dalam mempelajari hal baru. Saya percaya bahwa kesehatan fisik melalui olahraga adalah kunci produktivitas dan mental yang kuat.</p>
+        </section>
+
+        <section>
+            <h2>Informasi Pribadi</h2>
+            <div class="grid-info">
+                <div class="info-item">
+                    <b>Tanggal Lahir</b>
+                    19 Agustus 2007
+                </div>
+                <div class="info-item">
+                    <b>Nomor Telepon</b>
+                    083862445350
+                </div>
+                <div class="info-item">
+                    <b>Alamat</b>
+                    Kp. Cijagra rt 01 rw 09
+                </div>
+                <div class="info-item">
+                    <b>Hobby</b>
+                    Sepak Bola
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Pendidikan</h2>
+            <ul>
+                <li><span class="year">2026</span> SMA KP Baleendah (Lulus)</li>
+                <li><span class="year">2023</span> SMP Dayeuhkolot</li>
+                <li><span class="year">2020</span> SDN Cijagra</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Keahlian & Bahasa</h2>
+            <div>
+                <b>Keahlian:</b> 
+                <span class="badge">Berolahraga</span> 
+                <span class="badge">Teamwork</span>
+            </div>
+            <div style="margin-top: 10px;">
+                <b>Bahasa:</b>
+                <span class="badge">Indonesia</span>
+                <span class="badge">Inggris (Dasar)</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Media Sosial</h2>
+            <div class="grid-info">
+                <div class="info-item">
+                    <b>Instagram</b>
+                    @Akhdan
+                </div>
+                <div class="info-item">
+                    <b>TikTok</b>
+                    -
+                </div>
+                <div class="info-item">
+                    <b>Facebook</b>
+                    -
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 CV Digital - M. Akhdan Erlangga
+    </footer>
+</div>
+
+</body>
+</html>
